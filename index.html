@@ -107,7 +107,7 @@
          <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="./Images/pic8.webp">
+                    <img src="./Images/HD-wallpaper-turquoise-plain-sea-turquoise.jpg">
                     <div class="layer">
                         <h3>social media app</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, earum. Cum enim expedita repudiandae cupiditate consectetur, saepe nihil incidunt dolore, ad natus quibusdam! Ab in culpa nemo, ullam voluptatibus veritatis?</p>
@@ -123,7 +123,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="./Images/pic8.webp">
+                    <img src="./Images/HD-wallpaper-turquoise-plain-sea-turquoise.jpg">
                     <div class="layer">
                         <h3>online shoppig app</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, earum. Cum enim expedita repudiandae cupiditate consectetur, saepe nihil incidunt dolore, ad natus quibusdam! Ab in culpa nemo, ullam voluptatibus veritatis?</p>
@@ -167,50 +167,9 @@
         </div>
     </div>
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function openTab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        var side=document.getElementById("sidemenu");
-
-        function openMenu(){
-            side.style.right= "0";
-        }
-        function closeMenu(){
-            side.style.right= "-200px";
-        }
-    </script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxlQrB7P7MLGpe6qezp00qIbgAuhmhp4X5DExw78pdgQyOLIvLit4NUReYOI5JNlQ0f/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg");
-
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML="Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML=""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-         })
-    </script>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+    <script src="excelsheet.js"></script>
     
 </body>
 
